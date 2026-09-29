@@ -1,0 +1,4 @@
+inbox/*
+!inbox/.gitkeep
+knowledge/*/_text/
+__pycache__/
