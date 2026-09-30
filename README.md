@@ -15,9 +15,18 @@
 
 只丢文件、不说要做什么时，默认执行蒸馏。
 
-## 生产出的技能怎么用
+## 生产出的技能在哪里调用
 
-把 `skills/<name>/` 复制到任意项目的 `.claude/skills/` 下（或 `~/.claude/skills/` 全局可用），然后用 `/<name>` 调用，Claude 也会在合适的场景自动触发。
+| 在哪里用 | 怎么安装 | 覆盖范围 |
+|---|---|---|
+| **claude.ai 账号（推荐）** | 运行 `python3 tools/pack_skills.py` 生成 `dist/<技能名>.zip`，然后在 claude.ai 或桌面 App 中打开 **Customize → Skills → + → Create skill → Upload a skill**，逐个上传 | 网页版、桌面 App、Cowork、云端 Claude Code 会话；已用 claude.ai 账号登录的终端 Claude Code 也会自动同步。需要在设置里开启"代码执行与文件创建" |
+| **本仓库** | 已通过符号链接放进 `.claude/skills/`，不需要安装 | 在本仓库打开 Claude Code（包括云端会话）时直接可用 |
+| **其他某个项目** | 复制 `skills/<名>/` 到该项目的 `.claude/skills/` | 只在那个项目里可用 |
+| **本机所有项目** | 复制到 `~/.claude/skills/` | 本机终端里的 Claude Code |
+
+调用方式：输入 `/<技能名>`（例如 `/salon-kaizen-card`），或者直接描述问题（例如"我的沙龙新客留不住"），Claude 会自动选择合适的技能。
+
+打包时，技能之间引用的共享文件（例如 `reference.md`）会被复制进每个包，所以每个 ZIP 都可以单独上传。
 
 ## 已生产的技能
 
