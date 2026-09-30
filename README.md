@@ -19,6 +19,18 @@
 
 把 `skills/<name>/` 复制到任意项目的 `.claude/skills/` 下（或 `~/.claude/skills/` 全局可用），然后用 `/<name>` 调用，Claude 也会在合适的场景自动触发。
 
+## 已生产的技能
+
+来源：丰田 CI × 丹纳赫 DBS 沙龙经营模型（`knowledge/shiny-ci-dbs-v1/`）。五个技能要**一起复制**，因为专项技能会引用 `salon-strategy-advisor/reference.md`。
+
+| 技能 | 用途 | 模型 |
+|---|---|---|
+| `salon-strategy-advisor` | 综合咨询：问题分层、证据门槛、按 8 项模板出方案 | 两者 |
+| `salon-kaizen-card` | 给单个问题开改善问题卡、设计试点 | 丰田 CI |
+| `salon-pilot-review` | 复盘试点：继续、调整、停止还是固化 | 丰田 CI |
+| `salon-policy-deployment` | 年度或季度方针展开，只定 1–3 个突破目标 | 丹纳赫 DBS |
+| `salon-expansion-check` | 开店、收购、升级、关店评估 | 丹纳赫 DBS |
+
 ## 结构
 
 ```
