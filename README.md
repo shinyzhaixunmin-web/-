@@ -31,7 +31,7 @@
 | `salon-policy-deployment` | 年度或季度方针展开，只定 1–3 个突破目标 | 丹纳赫 DBS |
 | `salon-expansion-check` | 开店、收购、升级、关店评估 | 丹纳赫 DBS |
 
-完整用法示范：[examples/沙龙经营全流程演练.md](examples/沙龙经营全流程演练.md)（虚构案例，演示 5 个技能从定目标到评估扩张的衔接）。
+完整示例：[examples/demo-salon/](examples/demo-salon/)。这是一个虚构两店沙龙的完整经营周期，包含模拟数据、脚本算出的基线报告，以及 5 个技能各自的产出。
 
 ## 结构
 
@@ -42,6 +42,9 @@ knowledge/_needs/  按需提炼结果
 skills/         生产出的技能
 templates/      知识卡与技能模板
 tools/to_text.py  格式转换与分块（纯标准库；PDF 需 pdftotext 或 pypdf）
+tools/salon_metrics.py  沙龙经营基线与试点指标计算（纯标准库，数据格式见 examples/demo-salon/data/数据字典.md）
+examples/       完整示例
+stores/         放你自己门店的数据与报告（stores/*/data/ 不提交到 git）
 .claude/skills/ 本工坊的三个工作流技能：distill / extract / forge-skill
 ```
 

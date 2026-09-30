@@ -12,6 +12,9 @@
 | `skills/<skill-name>/SKILL.md` | 生产出来的技能（可复制到任何项目的 `.claude/skills/` 下使用） |
 | `templates/` | 知识卡与技能的模板 |
 | `tools/to_text.py` | 把各种格式转成纯文本并分块（仅用标准库，PDF 需 `pdftotext` 或 `pypdf`） |
+| `tools/salon_metrics.py` | 沙龙经营基线与试点指标计算（数据格式见 `examples/demo-salon/data/数据字典.md`） |
+| `examples/demo-salon/` | 沙龙技能的完整示例（虚构数据） |
+| `stores/<门店>/` | 用户真实门店的数据与报告；`data/` 不提交到 git |
 
 `<slug>` 用小写英文或拼音加连字符，例如 `poor-charlies-almanack`、`yuanze`。
 
