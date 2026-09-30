@@ -31,6 +31,8 @@
 | `salon-policy-deployment` | 年度或季度方针展开，只定 1–3 个突破目标 | 丹纳赫 DBS |
 | `salon-expansion-check` | 开店、收购、升级、关店评估 | 丹纳赫 DBS |
 
+完整用法示范：[examples/沙龙经营全流程演练.md](examples/沙龙经营全流程演练.md)（虚构案例，演示 5 个技能从定目标到评估扩张的衔接）。
+
 ## 结构
 
 ```
